@@ -10,28 +10,28 @@ var users = [
         firstName: "John",
         lastName: "Doe",
         age: 24,
-        gander: "male"
+        gender: "male"
     },
     {
         id: 2,
         firstName: "Jane",
         lastName: "Doe",
         age: 5,
-        gander: "female"
+        gender: "female"
     },
     {
         id: 3,
         firstName: "Jim",
         lastName: "Carrey",
         age: 54,
-        gander: "male"
+        gender: "male"
     },
     {
         id: 4,
         firstName: "Kate",
         lastName: "Winslet",
         age: 40,
-        gander: "female"
+        gender: "female"
     }
 ];
 // users nested array with four objects ends here
@@ -40,7 +40,7 @@ var users = [
 function getUsers() {
     var output = "";
     for(var i = 0; i < users.length; i++){
-        output  = `${users[i].id} - ${users[i].firstName} ${users[i].lastName} is ${users[i].age}, ${users[i].gander}`;
+        output  = `${users[i].id} - ${users[i].firstName} ${users[i].lastName} is ${users[i].age}, ${users[i].gender}`;
         console.log(output);  
         
     }  
@@ -55,7 +55,7 @@ function findUserById(id) {
     try{
         // add appropriete code here
         var user = _ .find(users, {'id': id});
-        var iFindUser = console.log(`${user.id} - ${user.firstName} ${user.lastName} is ${user.age}, ${user.gander}`); 
+        var iFindUser = console.log(`${user.id} - ${user.firstName} ${user.lastName} is ${user.age}, ${user.gender}`); 
         console.log(iFindUser);
         return iFindUser;
     } catch(error) {
